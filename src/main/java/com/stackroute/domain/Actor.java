@@ -12,6 +12,10 @@ public class Actor
         this.gender = gender;
         this.age = age;
     }
+    public Actor()
+    {
+
+    }
 
     public String getName()
     {
@@ -26,5 +30,17 @@ public class Actor
     public int getAge()
     {
         return age;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }

@@ -15,22 +15,11 @@ public class Main
         // ApplicationContext.............
 
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-        Movie movieobjA = context.getBean("MovieA", Movie.class);
-        movieobjA.display();
-        Movie movieobjB= context.getBean("MovieB", Movie.class);
-        movieobjB.display();
-        Movie movieobjC= context.getBean("MovieC", Movie.class);
-        movieobjC.display();
-        Movie movieobjD= context.getBean("MovieD", Movie.class);
-        movieobjD.display();
-        Movie movieobjE= context.getBean("MovieE", Movie.class);
-        movieobjE.display();
-        Movie movieobjF= context.getBean("MovieF", Movie.class);
-        movieobjF.display();
+        Movie movieobj1 = context.getBean("movie", Movie.class);
+        movieobj1.display();
+        Movie movieobj2 = context.getBean("movie1", Movie.class);
+        movieobj2.display();
 
-        // Testing the bean scope using prototype
-        Movie movieobj4 = context.getBean("MovieF", Movie.class);
-        System.out.println(movieobj4==movieobjF);
 
     }
 }
