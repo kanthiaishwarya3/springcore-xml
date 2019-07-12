@@ -15,22 +15,22 @@ public class Main
         // ApplicationContext.............
 
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-        Movie movieobj = context.getBean("movie", Movie.class);
-        movieobj.display();
+        Movie movieobjA = context.getBean("MovieA", Movie.class);
+        movieobjA.display();
+        Movie movieobjB= context.getBean("MovieB", Movie.class);
+        movieobjB.display();
+        Movie movieobjC= context.getBean("MovieC", Movie.class);
+        movieobjC.display();
+        Movie movieobjD= context.getBean("MovieD", Movie.class);
+        movieobjD.display();
+        Movie movieobjE= context.getBean("MovieE", Movie.class);
+        movieobjE.display();
+        Movie movieobjF= context.getBean("MovieF", Movie.class);
+        movieobjF.display();
 
-        // XmlBeanFactory............
-
-        BeanFactory beanFactory = new XmlBeanFactory(new ClassPathResource("beans.xml"));
-        Movie  movieobjxml = beanFactory.getBean("movie",Movie.class);
-        movieobjxml.display();
-
-        // BeanDefinitionReader...............
-
-        DefaultListableBeanFactory beanFactoryReader= new DefaultListableBeanFactory();
-        BeanDefinitionReader reader = new XmlBeanDefinitionReader(beanFactoryReader);
-        reader.loadBeanDefinitions(new FileSystemResource("src/main/resources/beans.xml"));
-        Movie moviebean= (Movie) beanFactory.getBean("movie");
-        moviebean.display();
+        // Testing the bean scope using prototype
+        Movie movieobj4 = context.getBean("MovieF", Movie.class);
+        System.out.println(movieobj4==movieobjF);
 
     }
 }

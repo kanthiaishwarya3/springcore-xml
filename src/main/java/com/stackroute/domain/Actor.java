@@ -6,30 +6,25 @@ public class Actor
     private String name,gender;
     private int age;
 
-    public void setName(String name)
+    public Actor(String name, String gender, int age)
     {
         this.name = name;
-    }
-
-    public void setGender(String gender)
-    {
         this.gender = gender;
-    }
-
-    public void setAge(int age)
-    {
         this.age = age;
     }
 
-    public String getName() {
+    public String getName()
+    {
         return name;
     }
 
-    public String getGender() {
+    public String getGender()
+    {
         return gender;
     }
 
-    public int getAge() {
+    public int getAge()
+    {
         return age;
     }
 }
