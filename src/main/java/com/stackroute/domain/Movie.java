@@ -49,4 +49,3 @@ public class Movie implements BeanFactoryAware, BeanNameAware, ApplicationContex
         System.out.println("The actor information : " +actor.getName()+"  "+actor.getGender() +"   "+actor.getAge());
     }
 }
-
