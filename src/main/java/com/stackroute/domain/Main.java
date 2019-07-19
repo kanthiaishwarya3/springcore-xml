@@ -13,7 +13,7 @@ public class Main
     public static void main(String args[])
     {
         // ApplicationContext.............
-
+        //creating instance of Movie class
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
         Movie movieobj1 = context.getBean("movie", Movie.class);
         movieobj1.display();

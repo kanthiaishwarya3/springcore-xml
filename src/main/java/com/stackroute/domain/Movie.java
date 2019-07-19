@@ -22,12 +22,13 @@ public class Movie
     {
 
     }
+    // constructor would initialize data members with the values of passed arguments while object of that class created.
     public void setActor(Actor actor)
     {
         this.actor = actor;
 
     }
-
+//displaying actor information
     public void display()
     {
         System.out.println("The actor information : " +actor.getName()+"  "+actor.getGender() +"   "+actor.getAge());

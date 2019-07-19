@@ -16,7 +16,7 @@ public class Actor
     {
 
     }
-
+    //getting value of the name member
     public String getName()
     {
         return name;
@@ -32,14 +32,17 @@ public class Actor
         return age;
     }
 
+    //setting value in the name member
     public void setName(String name) {
         this.name = name;
     }
 
+    //setting value in the gender member
     public void setGender(String gender) {
         this.gender = gender;
     }
 
+    //setting value in the age member
     public void setAge(int age) {
         this.age = age;
     }
