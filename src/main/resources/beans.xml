@@ -4,6 +4,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
       http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+<!---Bean defining id class and scope-->
+
     <bean name="MovieA,MovieB" class="com.stackroute.domain.Movie" scope="prototype">
         <constructor-arg name="actor" ref="actorObj1"></constructor-arg>
     </bean>
@@ -13,17 +15,22 @@
     <bean name="MovieE,MovieF" class="com.stackroute.domain.Movie" scope="prototype">
         <constructor-arg name="actor" ref="actorObj3"></constructor-arg>
     </bean>
+<!--Setting values to constructor injection-->
 
     <bean id="actorObj1" class="com.stackroute.domain.Actor">
         <constructor-arg name="name" value="Rajini kanth" type="String"></constructor-arg>
         <constructor-arg name="gender" value="Male" type="String"></constructor-arg>
         <constructor-arg name="age" value="65" type="int"></constructor-arg>
     </bean>
+    <!--Setting values to constructor injection-->
+
     <bean id="actorObj2" class="com.stackroute.domain.Actor">
         <constructor-arg name="name" value="Surya" type="String"></constructor-arg>
         <constructor-arg name="gender" value="Male" type="String"></constructor-arg>
         <constructor-arg name="age" value="40" type="int"></constructor-arg>
     </bean>
+    <!--Setting values to constructor injection-->
+
     <bean id="actorObj3" class="com.stackroute.domain.Actor">
         <constructor-arg name="name" value="ram" type="String"></constructor-arg>
         <constructor-arg name="gender" value="Male" type="String"></constructor-arg>

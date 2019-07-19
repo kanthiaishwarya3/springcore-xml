@@ -12,7 +12,7 @@ public class Main
 {
     public static void main(String args[])
     {
-        // ApplicationContext.............
+        // ApplicationContext provides configuration of application
 
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
         Movie movieobjA = context.getBean("MovieA", Movie.class);

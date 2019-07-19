@@ -2,10 +2,12 @@ package com.stackroute.domain;
 
 public class Actor
 {
-    // Declaration
+    // data members of the class.
     private String name,gender;
     private int age;
-
+    // constructor would initialize data members
+    // with the values of passed arguments while
+    // object of that class created.
     public Actor(String name, String gender, int age)
     {
         this.name = name;
